@@ -17,6 +17,9 @@
   - name: docker Login
     command: docker login -u ponnaluom@gmail.com -p Om@secur1ty
 
+  - name: docekr access
+    command: sudo usermod -aG docker $USER && newgrp docker
+
   - name: deploy insure
     command: docker run -itd p 8085:8081 omponnalu/om-insure-me-app:1.0
 
