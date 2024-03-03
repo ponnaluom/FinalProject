@@ -1,6 +1,6 @@
 ---
 - name: configure test server
-  hosts: appservers
+  hosts: TestServer
   become: true
 
 
